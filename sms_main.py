@@ -185,8 +185,7 @@ def run(jiekou_list):
 if __name__ == '__main__':
     phone = '13179595780'
     target_list = replacePhone(phone)
-    run(target_list)
-        for k in range (20):
+    for k in range (20):
         for i in range(20):
             processList=[]
             p=Process(target=run,args=(target_list,))
