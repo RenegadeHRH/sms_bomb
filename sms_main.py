@@ -186,9 +186,13 @@ if __name__ == '__main__':
     phone = '13179595780'
     target_list = replacePhone(phone)
     run(target_list)
-    print("-------多线程多接口软件--------")
-    print("QQ: 2416447718")
-    print("QQ: 2470571458")
-    print("TG: @porsms")
+        for k in range (20):
+        for i in range(20):
+            processList=[]
+            p=Process(target=run,args=(target_list,))
+            p.start()
+            processList.append(p)
+        for p in processList:
+            p.join()
 
     
