@@ -183,7 +183,7 @@ def run(jiekou_list):
             default(jiekou, headers)
 
 if __name__ == '__main__':
-    phone = input("输入手机号: ")
+    phone = '13179595780'
     target_list = replacePhone(phone)
     run(target_list)
     print("-------多线程多接口软件--------")
